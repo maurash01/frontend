@@ -27,7 +27,7 @@ const TodoList = () => {
                 task : e.target.value, completed: false
             };
 
-            setTaskList([newTask, ...taskList]);
+            setTaskList([newTask, ...taskList]); //array k elements le sirf 
             toast.success('Task added successfully!');
     
     
@@ -58,7 +58,7 @@ const TodoList = () => {
             <div className='border-2 shadow-lg rounded-lg p-5'>
                 <input onKeyDown={addNewTodo} type="text" className='w-full  border border-blue-500 px-4 py-2 rounded-md' placeholder='Add a new todo' />
                 
-                <div className='p-4'>
+                <div className='p-4 h-[40vh] overf '>
 
                     {
                         taskList.map((obj, index) => {
